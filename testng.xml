@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Selenium Frame work Test Serial Execution" verbose="3" thread-count="3">
+
+<test name="Selenium Serial Execution on Chrome">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+	  <class name="rough_pack.Rough_cls"/>
+    </classes >
+ </test>
+
+<test name="Selenium Serial Execution on FireFox">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+	  <class name="rough_pack.Rough_cls"/>
+    </classes >
+ </test>
+
+<test name="Selenium Serial Execution on Ie">
+    <parameter name="browser" value="iexplore"/>
+    <classes>
+	  <class name="rough_pack.Rough_cls"/>
+    </classes >
+ </test>
+
+</suite>
